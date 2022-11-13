@@ -1,0 +1,158 @@
+body {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.navbar {
+  box-shadow: -1px 5px 13px 2px rgba(80,160,96,1);
+  -webkit-box-shadow: -1px 5px 13px 2px rgba(80,160,96,1);
+  -moz-box-shadow: -1px 5px 13px 2px rgba(80,160,96,1);
+  background-color: white;
+}
+
+.nav-item {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#showcase {
+  margin-top: 4rem;
+}
+
+
+#navtext {
+  color: black;
+}
+
+.nav-item.active, .nav-item:hover > .nav-link {
+    color: #50a060 !important;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#greenText {
+  color: #50a060;
+}
+
+#greenBtn {
+  background-color: #50a060 !important;
+  color: white !important;
+}
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus {
+  border: 3px solid #50a060;
+  box-shadow: none;
+}
+
+#marquee{
+  height: 5vh;
+  background: #50a060;
+  color: white;
+  overflow: hidden;
+}
+
+#marqueeText {
+  padding: 5px 0;
+  font-size: 2rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 4vh;
+  -moz-animation: marquee 10s linear infinite;
+  -webkit-animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+}
+
+.myIcon > img {
+  width: 50px;
+}
+
+.card{
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#bg {
+  background-color: #50a060;
+  color: white;
+}
+
+i {
+  padding-right: 0.7rem;
+}
+
+#closeBtn {
+  border: none;
+  background-color: red;
+  color: white;
+  width: 30%;
+  margin: auto;
+}
+
+#submitBtn {
+  border: none;
+  background-color: #50a060;
+  color: white;
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+h5 {
+margin-left: 12rem;
+font-weight: bold;
+}
+
+.contacts {
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  #poster {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #marqueeText{
+    font-size: 1.3rem;
+  }
+
+  .material-symbols-outlined {
+    font-size: 40px;
+  }
+
+  .contacts {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  #contacts {
+    display: block;
+  }
+
+  h5 {
+    margin-left: 8rem;
+  }
+
+  #submitBtn {
+    margin-left: 7.5rem;
+    width: 30%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
